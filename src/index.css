@@ -1,0 +1,63 @@
+/* Style for the entire page background */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5dc; /* Beige background for the whole page */
+}
+
+/* Style for the message container */
+.message {
+  background-color: beige; /* Beige background for the message box */
+  color: maroon; /* Brown text color */
+  font-family: 'Arial', sans-serif; /* Professional font */
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: 600px;
+  width: 80%; /* Responsive width */
+}
+
+/* Header text */
+.message h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Links container */
+.message .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Link buttons */
+.message .links a {
+  display: inline-block;
+  background-color: maroon;
+  color: beige;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for links */
+.message .links a:hover {
+  background-color: rgb(216, 129, 129); /* Dark brown for hover */
+  color: white;
+}
+
+.message {
+  position: relative;
+  
+}
+
+.message{
+  box-shadow: none;
+}
