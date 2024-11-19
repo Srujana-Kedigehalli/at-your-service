@@ -1,0 +1,54 @@
+.services-overview {
+    padding: 2rem;
+    background-color: #eddddd; /* Darker background for better contrast */
+    font-family: 'Arial', sans-serif;
+    color: #f4f4f4; /* Lighter text for readability */
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Bright white for the title */
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background-color: #444; /* Slightly lighter dark background for cards */
+    border: 1px solid #555; /* Subtle border for definition */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #eaeaea; /* Light text for service card content */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #80d8ff; /* Light blue for service titles */
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #d1d1d1; /* Lighter gray for descriptions */
+  }
+  
+  .service-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #69f0ae; /* Light green for price */
+  }
+  

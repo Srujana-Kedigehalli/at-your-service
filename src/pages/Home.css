@@ -1,0 +1,150 @@
+:root {
+    --navy: #2F4156;
+    --teal: #567C8D;
+    --sky-blue: #C8D9E6;
+    --beige: #F5EFEB;
+    --white: #FFFFFF;
+  }
+  
+  body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--sky-blue);
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(47, 65, 86, 0.8), rgba(47, 65, 86, 0.8)), url('../Download\ free\ image\ of\ Dark\ navy\ abstract\ background\ wallpaper\ image\ by\ Nunny\ about\ navy\ background\,\ dark\ blue\ background\,\ dark\ navy\ abstract\ background\ wallpaper\,\ navy\ blue\ background\,\ and\ navy\ texture\ 2551124.jpeg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 1rem;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    color:var(--beige);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color:var(--beige);
+  }
+  
+  .cta-buttons a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0 0.5rem;
+    background-color: var(--teal);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .cta-buttons a:hover {
+    background-color: var(--sky-blue);
+    color: var(--navy);
+  }
+  
+  .services {
+    padding: 4rem 5%;
+    background-color: var(--white);
+    text-align: center;
+  }
+  
+  .services h2 {
+    color: var(--teal);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .service-item {
+    background-color: var(--beige);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-item h3 {
+    color: var(--navy);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
