@@ -1,0 +1,21 @@
+.header_section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header_bottom {
+    padding: 10px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
