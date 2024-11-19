@@ -33,7 +33,7 @@ exports.login = async (req, res) => {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '10h' });
     res.status(200).json({ _id: user._id, token, message: 'Login successful' });
   } catch (error) {
     res.status(500).json({ message: 'Error logging in' });
@@ -42,8 +42,7 @@ exports.login = async (req, res) => {
 exports.getUser = async (req, res) => {
     const { userId } = req.params;
     try {
-      const user = await User.findById(userId).select('-password');  // Exclude password
-      if (!user) {
+      const user = await User.findById(req.userId);      if (!user) {
         return res.status(404).json({ message: 'User not found' });
       }
       res.status(200).json(user);
